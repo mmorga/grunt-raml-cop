@@ -1,0 +1,40 @@
+{
+  "name": "grunt-raml-cop",
+  "description": "Grunt plugin for RAML Cop.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mmorga/grunt-raml-cop",
+  "author": {
+    "name": "Mark Morga",
+    "email": "markmorga@gmail.com",
+    "url": "http://www.markmorga.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmorga/grunt-raml-cop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmorga/grunt-raml-cop/issues"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "raml-cop": "^1.1.0"
+  }
+}

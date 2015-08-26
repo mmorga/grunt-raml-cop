@@ -26,7 +26,12 @@ module.exports = function(grunt) {
       srcs = this.files.map(function (f) { return f.src; }).
         reduce(function (pv,cv) {return pv.concat(cv);}, []);
 
-    grunt.log.writeln('Validating target: ' + this.target);
+    if(srcs.length == 0) {
+      grunt.log.error('No files to validate found.');
+    } else {
+      grunt.log.writeln('Validating target: ' + this.target);
+    }
+
     // Parse each argument in sequence.
     async.eachSeries(srcs,
       function(arg, callback) {

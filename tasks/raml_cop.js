@@ -10,8 +10,8 @@
 
 var async     = require('async');
 var raml      = require('raml-parser');
-var utils     = require('../node_modules/raml-cop/src/lib/utils.js');
-var reporter  = require('../node_modules/raml-cop/src/lib/reporter.js');
+var utils     = require('raml-cop/src/lib/utils.js');
+var reporter  = require('raml-cop/src/lib/reporter.js');
 
 module.exports = function(grunt) {
 
